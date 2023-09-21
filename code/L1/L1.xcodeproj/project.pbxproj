@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CE989872ABBF18100F6AB38 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9CE989862ABBF18100F6AB38 /* RealityKitContent */; };
 		9CE989892ABBF18100F6AB38 /* L1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE989882ABBF18100F6AB38 /* L1App.swift */; };
 		9CE9898B2ABBF18100F6AB38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9898A2ABBF18100F6AB38 /* ContentView.swift */; };
 		9CE9898F2ABBF18300F6AB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE9898E2ABBF18300F6AB38 /* Assets.xcassets */; };
 		9CE989922ABBF18300F6AB38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE989912ABBF18300F6AB38 /* Preview Assets.xcassets */; };
+		9CE989C12ABC156D00F6AB38 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 9CE989C02ABC156D00F6AB38 /* RealityKitContent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9CE989812ABBF18100F6AB38 /* L1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CE989852ABBF18100F6AB38 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		9CE989882ABBF18100F6AB38 /* L1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1App.swift; sourceTree = "<group>"; };
 		9CE9898A2ABBF18100F6AB38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CE9898E2ABBF18300F6AB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CE989912ABBF18300F6AB38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CE989C02ABC156D00F6AB38 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE989872ABBF18100F6AB38 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				9CE989832ABBF18100F6AB38 /* L1 */,
-				9CE989842ABBF18100F6AB38 /* Packages */,
+				9CE989BF2ABC156D00F6AB38 /* Packages */,
 				9CE989822ABBF18100F6AB38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,20 +62,20 @@
 			path = L1;
 			sourceTree = "<group>";
 		};
-		9CE989842ABBF18100F6AB38 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				9CE989852ABBF18100F6AB38 /* RealityKitContent */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		9CE989902ABBF18300F6AB38 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 				9CE989912ABBF18300F6AB38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CE989BF2ABC156D00F6AB38 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9CE989C02ABC156D00F6AB38 /* RealityKitContent */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +95,6 @@
 			);
 			name = L1;
 			packageProductDependencies = (
-				9CE989862ABBF18100F6AB38 /* RealityKitContent */,
 			);
 			productName = L1;
 			productReference = 9CE989812ABBF18100F6AB38 /* L1.app */;
@@ -141,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE989922ABBF18300F6AB38 /* Preview Assets.xcassets in Resources */,
+				9CE989C12ABC156D00F6AB38 /* RealityKitContent in Resources */,
 				9CE9898F2ABBF18300F6AB38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,13 +352,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		9CE989862ABBF18100F6AB38 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CE989792ABBF18100F6AB38 /* Project object */;
 }
