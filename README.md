@@ -1,1 +1,1 @@
-<h1><img src="assests/stanford.svg" width="90" height="90" /> <br/> Stanford CS11si - How to Make VR: Introduction to Virtual Reality Design and Development</h1>
+<h1><img src="assets/stanford.svg" width="90" height="90" /> <br/> Stanford CS11si - How to Make VR: Introduction to Virtual Reality Design and Development</h1>
