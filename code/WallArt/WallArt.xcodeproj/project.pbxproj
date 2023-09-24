@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,11 +14,16 @@
 		9C28D3DA2ABE9D7400891787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28D3D92ABE9D7400891787 /* Assets.xcassets */; };
 		9C28D3DD2ABE9D7400891787 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28D3DC2ABE9D7400891787 /* Preview Assets.xcassets */; };
 		9C28D3E52ABEC49E00891787 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C28D3E42ABEC49E00891787 /* ViewModel.swift */; };
+		9C28D3E82ABED34700891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3E72ABED34700891787 /* RealityKitContent */; };
+		9C28D3EA2ABED38300891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3E92ABED38300891787 /* RealityKitContent */; };
+		9C28D3EC2ABED3CE00891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3EB2ABED3CE00891787 /* RealityKitContent */; };
+		9C28D3EF2ABED45000891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3EE2ABED45000891787 /* RealityKitContent */; };
+		9C28D3F32ABF8C6700891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3F22ABF8C6700891787 /* RealityKitContent */; };
+		9C28D3F82ABFC36300891787 /* think_different.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C28D3F72ABFC36300891787 /* think_different.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C28D3CC2ABE9D7300891787 /* WallArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C28D3D02ABE9D7300891787 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		9C28D3D32ABE9D7300891787 /* WallArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallArtApp.swift; sourceTree = "<group>"; };
 		9C28D3D52ABE9D7300891787 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C28D3D72ABE9D7300891787 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		9C28D3DC2ABE9D7400891787 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C28D3DE2ABE9D7400891787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C28D3E42ABEC49E00891787 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9C28D3F72ABFC36300891787 /* think_different.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = think_different.png; path = Assets.xcassets/think_different.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C28D3E82ABED34700891787 /* RealityKitContent in Frameworks */,
+				9C28D3EA2ABED38300891787 /* RealityKitContent in Frameworks */,
+				9C28D3EF2ABED45000891787 /* RealityKitContent in Frameworks */,
+				9C28D3EC2ABED3CE00891787 /* RealityKitContent in Frameworks */,
+				9C28D3F32ABF8C6700891787 /* RealityKitContent in Frameworks */,
 				9C28D3D22ABE9D7300891787 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				9C28D3CE2ABE9D7300891787 /* WallArt */,
-				9C28D3CF2ABE9D7300891787 /* Packages */,
 				9C28D3CD2ABE9D7300891787 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +70,7 @@
 		9C28D3CE2ABE9D7300891787 /* WallArt */ = {
 			isa = PBXGroup;
 			children = (
+				9C28D3F72ABFC36300891787 /* think_different.png */,
 				9C28D3D32ABE9D7300891787 /* WallArtApp.swift */,
 				9C28D3D52ABE9D7300891787 /* ContentView.swift */,
 				9C28D3D72ABE9D7300891787 /* ImmersiveView.swift */,
@@ -69,14 +80,6 @@
 				9C28D3E42ABEC49E00891787 /* ViewModel.swift */,
 			);
 			path = WallArt;
-			sourceTree = "<group>";
-		};
-		9C28D3CF2ABE9D7300891787 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				9C28D3D02ABE9D7300891787 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		9C28D3DB2ABE9D7400891787 /* Preview Content */ = {
@@ -105,6 +108,11 @@
 			name = WallArt;
 			packageProductDependencies = (
 				9C28D3D12ABE9D7300891787 /* RealityKitContent */,
+				9C28D3E72ABED34700891787 /* RealityKitContent */,
+				9C28D3E92ABED38300891787 /* RealityKitContent */,
+				9C28D3EB2ABED3CE00891787 /* RealityKitContent */,
+				9C28D3EE2ABED45000891787 /* RealityKitContent */,
+				9C28D3F22ABF8C6700891787 /* RealityKitContent */,
 			);
 			productName = WallArt;
 			productReference = 9C28D3CC2ABE9D7300891787 /* WallArt.app */;
@@ -134,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 9C28D3C32ABE9D7300891787;
+			packageReferences = (
+				9C28D3F12ABF8C6700891787 /* XCLocalSwiftPackageReference "WallArt/Packages/RealityKitContent" */,
+			);
 			productRefGroup = 9C28D3CD2ABE9D7300891787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C28D3DD2ABE9D7400891787 /* Preview Assets.xcassets in Resources */,
+				9C28D3F82ABFC36300891787 /* think_different.png in Resources */,
 				9C28D3DA2ABE9D7400891787 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +376,35 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		9C28D3F12ABF8C6700891787 /* XCLocalSwiftPackageReference "WallArt/Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = WallArt/Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		9C28D3D12ABE9D7300891787 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C28D3E72ABED34700891787 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C28D3E92ABED38300891787 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C28D3EB2ABED3CE00891787 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C28D3EE2ABED45000891787 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C28D3F22ABF8C6700891787 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
 		};
