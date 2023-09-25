@@ -1,7 +1,7 @@
 <h1><img src="assets/stanford.svg" width="90" height="90" /> <br/> Stanford CS11si - How to Make VR: Introduction to Virtual Reality Design and Development</h1>
 <br />
 <br />
-<img src="assets/akaranam.webp" width="120" height="120" />
+<img src="assets/arjun_karanam.webp" width="120" height="120" />
 <span>Instructor: <a href="https://profiles.stanford.edu/arjun-karanam">Arjun Karanam</a></span>
 <br />
 <span>Semester: Winter 2023</span>
