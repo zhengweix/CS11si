@@ -21,6 +21,7 @@ struct WallArtApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
+                .environment(viewModel)
         }
     }
 }
