@@ -20,6 +20,8 @@
 		9C28D3EF2ABED45000891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3EE2ABED45000891787 /* RealityKitContent */; };
 		9C28D3F32ABF8C6700891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3F22ABF8C6700891787 /* RealityKitContent */; };
 		9C28D3F82ABFC36300891787 /* think_different.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C28D3F72ABFC36300891787 /* think_different.png */; };
+		9C73A4C02AC2548300295EC5 /* sketch.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C73A4BF2AC2548300295EC5 /* sketch.jpeg */; };
+		9C73A4C22AC254A200295EC5 /* DoodleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C73A4C12AC254A200295EC5 /* DoodleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		9C28D3DE2ABE9D7400891787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C28D3E42ABEC49E00891787 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9C28D3F72ABFC36300891787 /* think_different.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = think_different.png; path = Assets.xcassets/think_different.png; sourceTree = "<group>"; };
+		9C73A4BF2AC2548300295EC5 /* sketch.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sketch.jpeg; path = Assets.xcassets/sketch.jpeg; sourceTree = "<group>"; };
+		9C73A4C12AC254A200295EC5 /* DoodleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +75,15 @@
 			isa = PBXGroup;
 			children = (
 				9C28D3F72ABFC36300891787 /* think_different.png */,
-				9C28D3D32ABE9D7300891787 /* WallArtApp.swift */,
+				9C73A4BF2AC2548300295EC5 /* sketch.jpeg */,
 				9C28D3D52ABE9D7300891787 /* ContentView.swift */,
 				9C28D3D72ABE9D7300891787 /* ImmersiveView.swift */,
+				9C73A4C12AC254A200295EC5 /* DoodleView.swift */,
+				9C28D3E42ABEC49E00891787 /* ViewModel.swift */,
+				9C28D3D32ABE9D7300891787 /* WallArtApp.swift */,
 				9C28D3D92ABE9D7400891787 /* Assets.xcassets */,
 				9C28D3DE2ABE9D7400891787 /* Info.plist */,
 				9C28D3DB2ABE9D7400891787 /* Preview Content */,
-				9C28D3E42ABEC49E00891787 /* ViewModel.swift */,
 			);
 			path = WallArt;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C28D3DD2ABE9D7400891787 /* Preview Assets.xcassets in Resources */,
+				9C73A4C02AC2548300295EC5 /* sketch.jpeg in Resources */,
 				9C28D3F82ABFC36300891787 /* think_different.png in Resources */,
 				9C28D3DA2ABE9D7400891787 /* Assets.xcassets in Resources */,
 			);
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C28D3D62ABE9D7300891787 /* ContentView.swift in Sources */,
+				9C73A4C22AC254A200295EC5 /* DoodleView.swift in Sources */,
 				9C28D3D42ABE9D7300891787 /* WallArtApp.swift in Sources */,
 				9C28D3E52ABEC49E00891787 /* ViewModel.swift in Sources */,
 				9C28D3D82ABE9D7300891787 /* ImmersiveView.swift in Sources */,
