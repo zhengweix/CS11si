@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0D66D02AC2AF460060C248 /* ImpactParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D66CF2AC2AF460060C248 /* ImpactParticleSystem.swift */; };
 		9C28D3D22ABE9D7300891787 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C28D3D12ABE9D7300891787 /* RealityKitContent */; };
 		9C28D3D42ABE9D7300891787 /* WallArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C28D3D32ABE9D7300891787 /* WallArtApp.swift */; };
 		9C28D3D62ABE9D7300891787 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C28D3D52ABE9D7300891787 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C0D66CF2AC2AF460060C248 /* ImpactParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactParticleSystem.swift; sourceTree = "<group>"; };
 		9C28D3CC2ABE9D7300891787 /* WallArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C28D3D32ABE9D7300891787 /* WallArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallArtApp.swift; sourceTree = "<group>"; };
 		9C28D3D52ABE9D7300891787 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,8 +79,9 @@
 				9C28D3F72ABFC36300891787 /* think_different.png */,
 				9C73A4BF2AC2548300295EC5 /* sketch.jpeg */,
 				9C28D3D52ABE9D7300891787 /* ContentView.swift */,
-				9C28D3D72ABE9D7300891787 /* ImmersiveView.swift */,
 				9C73A4C12AC254A200295EC5 /* DoodleView.swift */,
+				9C0D66CF2AC2AF460060C248 /* ImpactParticleSystem.swift */,
+				9C28D3D72ABE9D7300891787 /* ImmersiveView.swift */,
 				9C28D3E42ABEC49E00891787 /* ViewModel.swift */,
 				9C28D3D32ABE9D7300891787 /* WallArtApp.swift */,
 				9C28D3D92ABE9D7400891787 /* Assets.xcassets */,
@@ -181,6 +184,7 @@
 			files = (
 				9C28D3D62ABE9D7300891787 /* ContentView.swift in Sources */,
 				9C73A4C22AC254A200295EC5 /* DoodleView.swift in Sources */,
+				9C0D66D02AC2AF460060C248 /* ImpactParticleSystem.swift in Sources */,
 				9C28D3D42ABE9D7300891787 /* WallArtApp.swift in Sources */,
 				9C28D3E52ABEC49E00891787 /* ViewModel.swift in Sources */,
 				9C28D3D82ABE9D7300891787 /* ImmersiveView.swift in Sources */,

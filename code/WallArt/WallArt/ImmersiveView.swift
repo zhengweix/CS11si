@@ -15,6 +15,9 @@ struct ImmersiveView: View {
     @Environment(ViewModel.self) private var viewModel
     @Environment(\.openWindow) private var openWindow
     
+    private static let planeX: Float = 1.43
+    private static let planeZ: Float = 1.0
+    
     @State private var inputText = ""
     @State public var showTextField = false
     
@@ -39,7 +42,7 @@ struct ImmersiveView: View {
     
     @State var planeEntity: Entity = {
         let wallAnchor = AnchorEntity(.plane(.vertical, classification: .wall, minimumBounds: SIMD2<Float>(0.6, 0.6)))
-        let planeMesh = MeshResource.generatePlane(width: 1.43, depth: 1.0, cornerRadius: 0.1)
+        let planeMesh = MeshResource.generatePlane(width: planeX, depth: planeZ, cornerRadius: 0.1)
         let material = ImmersiveView.loadImageMaterial(imageUrl: "think_different")
         let planeEntity = ModelEntity(mesh: planeMesh, materials: [material])
         planeEntity.name = "canvas"
@@ -76,17 +79,23 @@ struct ImmersiveView: View {
                 guard let projectile = projectileSceneEntity.findEntity(named: "ParticleRoot") else { return }
                 projectile.children[0].components[ParticleEmitterComponent.self]?.isEmitting = false
                 projectile.children[1].components[ParticleEmitterComponent.self]?.isEmitting = false
-                characterEntity.addChild(projectileSceneEntity)
+                projectile.components.set(ProjectileComponent())
+                characterEntity.addChild(projectile)
                 
-                guard let idleAnimationResource = assistant.availableAnimations.first else { return }
-                guard let waveAnimationResource = waveModel.availableAnimations.first else { return }
+                let impactParticleSceneEntity = try await Entity(named: "ImpactParticle", in: realityKitContentBundle)
+                guard let impactParticle = impactParticleSceneEntity.findEntity(named: "ImpactParticle") else { return }
+                impactParticle.position = [0, 0, 0]
+                impactParticle.components[ParticleEmitterComponent.self]?.burstCount = 500
+                impactParticle.components[ParticleEmitterComponent.self]?.emitterShapeSize.x = Self.planeX / 2.0
+                impactParticle.components[ParticleEmitterComponent.self]?.emitterShapeSize.z = Self.planeZ / 2.0
+                planeEntity.addChild(impactParticle)
+                
                 guard let jumpUpAnimationResource = jumpUpModel.availableAnimations.first else { return }
                 guard let jumpFloatAnimationResource = jumpFloatModel.availableAnimations.first else { return }
                 guard let jumpDownAnimationResource = jumpDownModel.availableAnimations.first else { return }
                 let jumpAnimation = try AnimationResource.sequence(with: [jumpUpAnimationResource, jumpFloatAnimationResource, jumpDownAnimationResource, idleAnimationResource.repeat()])
                 assistant.playAnimation(idleAnimationResource.repeat())
                 
-                // assign state asynchronously
                 Task {
                     self.assistant = assistant
                     self.waveAnimation = waveAnimation
@@ -165,6 +174,8 @@ struct ImmersiveView: View {
                     }
                 }
             case .updateWallArt:
+                self.projectile?.components[ProjectileComponent.self]?.canBurst = true
+                
                 if let plane = planeEntity.findEntity(named: "canvas") as? ModelEntity {
                     plane.model?.materials = [ImmersiveView.loadImageMaterial(imageUrl: "sketch")]
                 }

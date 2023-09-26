@@ -12,6 +12,11 @@ struct WallArtApp: App {
     
     @State private var viewModel = ViewModel()
     
+    init() {
+        ImpactParticleSystem.registerSystem()
+        ProjectileComponent.registerComponent()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -23,6 +28,7 @@ struct WallArtApp: App {
             ImmersiveView()
                 .environment(viewModel)
         }
+        
         WindowGroup(id: "doodle_canvas") {
             DoodleView()
                 .environment(viewModel)
